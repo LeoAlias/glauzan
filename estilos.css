@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  background-size: auto;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  font-family: "Noto Sans TC", sans-serif; }
+
+.main-header1 {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 120px;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 0px;
+  background-color: rgba(5, 107, 57, 0.9);
+  text-align: left;
+  font-family: "Noto Sans TC", sans-serif;
+  color: gray;
+  text-decoration: none;
+  text-underline-offset: none;
+  display: block;
+  z-index: 1; }
+
+.logo1 {
+  position: fixed;
+  left: 20px;
+  top: 35px;
+  height: 50px; }
+
+.main-nav1 {
+  display: inline-block;
+  margin-top: 90px;
+  text-align: center;
+  width: 100%;
+  margin-right: 15px;
+  font-family: "Noto Sans TC", sans-serif; }
+
+.nav1 li {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  width: auto;
+  margin-right: 4px;
+  margin-left: 4px; }
+
+.nav1 ul {
+  background-color: rgba(185, 240, 213, 0.2); }
+
+.transition a {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 500;
+  transition-duration: .3s; }
+
+.transition a:hover {
+  color: whitesmoke;
+  transform: scale(1.1);
+  font-weight: bold; }
+
+.logo1 {
+  position: fixed;
+  left: 20px;
+  top: 35px;
+  height: 50px; }
+
+ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center; }
+
+.containerBox {
+  background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5));
+  margin-top: 170px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.containerTitle {
+  text-align: center;
+  color: grey;
+  margin-top: 30px; }
+
+.tabla {
+  color: gray;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: left;
+  color: gray;
+  margin: 2% 25% 25% 25%; }
+
+.tabla2 {
+  display: inline-block;
+  color: gray;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: left;
+  text-decoration: none; }
+
+.main-footer {
+  background-color: rgba(5, 107, 57, 0.9);
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  color: gray;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 70px;
+  width: 100%; }
+
+.footer li {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center; }
