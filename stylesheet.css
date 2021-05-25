@@ -11,6 +11,20 @@ html {
     background-repeat: no-repeat;
     font-family: 'Noto Sans TC', sans-serif;
 }
+.wsp {
+    position: fixed;
+    left:1180px;
+    top: 45px;
+    height: 50px;
+    font-size:xx-large; 
+    display: flex;
+    text-align: end;
+    color: white;
+    font-family: 'Carter One', cursive;
+    font-family: 'Days One', sans-serif;
+    z-index: 1;
+
+}
 body.body {
     padding-bottom: 100px;
 }
