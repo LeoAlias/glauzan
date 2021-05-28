@@ -1,13 +1,16 @@
+/* line 5, estilos.scss */
 * {
   padding: 0;
   margin: 0; }
 
+/* line 11, estilos.scss */
 html {
   background-size: auto;
   background-position-x: center;
   background-repeat: no-repeat;
   font-family: "Noto Sans TC", sans-serif; }
 
+/* line 17, estilos.scss */
 .main-header1 {
   position: fixed;
   left: 0px;
@@ -25,12 +28,14 @@ html {
   display: block;
   z-index: 1; }
 
+/* line 34, estilos.scss */
 .logo1 {
   position: fixed;
   left: 20px;
   top: 35px;
   height: 50px; }
 
+/* line 40, estilos.scss */
 .main-nav1 {
   display: inline-block;
   margin-top: 90px;
@@ -39,6 +44,7 @@ html {
   margin-right: 15px;
   font-family: "Noto Sans TC", sans-serif; }
 
+/* line 48, estilos.scss */
 .nav1 li {
   display: inline-block;
   text-decoration: none;
@@ -50,26 +56,31 @@ html {
   margin-right: 4px;
   margin-left: 4px; }
 
+/* line 60, estilos.scss */
 .nav1 ul {
   background-color: rgba(185, 240, 213, 0.2); }
 
+/* line 63, estilos.scss */
 .transition a {
   color: whitesmoke;
   font-size: 18px;
   font-weight: 500;
   transition-duration: .3s; }
 
+/* line 69, estilos.scss */
 .transition a:hover {
   color: whitesmoke;
   transform: scale(1.1);
   font-weight: bold; }
 
+/* line 75, estilos.scss */
 .logo1 {
   position: fixed;
   left: 20px;
   top: 35px;
   height: 50px; }
 
+/* line 81, estilos.scss */
 ul li a {
   text-decoration: none;
   display: inline-block;
@@ -77,6 +88,7 @@ ul li a {
   font-family: "Noto Sans TC", sans-serif;
   text-align: center; }
 
+/* line 88, estilos.scss */
 .containerBox {
   background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5));
   margin-top: 170px;
@@ -87,11 +99,13 @@ ul li a {
   align-items: center;
   text-align: center; }
 
+/* line 98, estilos.scss */
 .containerTitle {
   text-align: center;
   color: grey;
   margin-top: 30px; }
 
+/* line 103, estilos.scss */
 .tabla {
   color: gray;
   font-family: "Noto Sans TC", sans-serif;
@@ -99,6 +113,7 @@ ul li a {
   color: gray;
   margin: 2% 25% 25% 25%; }
 
+/* line 112, estilos.scss */
 .tabla2 {
   display: inline-block;
   color: gray;
@@ -106,6 +121,7 @@ ul li a {
   text-align: left;
   text-decoration: none; }
 
+/* line 120, estilos.scss */
 .main-footer {
   background-color: rgba(5, 107, 57, 0.9);
   text-align: center;
@@ -117,6 +133,7 @@ ul li a {
   height: 70px;
   width: 100%; }
 
+/* line 133, estilos.scss */
 .footer li {
   display: inline-block;
   text-decoration: none;

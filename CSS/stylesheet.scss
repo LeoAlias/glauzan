@@ -1,3 +1,9 @@
+$defaultColor :rgb(5, 107, 57);
+$defaultdegradee :rgba(5, 107, 57, 0.9);
+$defaultFont : 'Noto Sans TC', sans-serif;
+$defaultFontColor : whitesmoke;
+
+
 *{
     padding: 0;
     margin: 0;
@@ -20,8 +26,6 @@ html {
     display: flex;
     text-align: end;
     color: white;
-    font-family: 'Carter One', cursive;
-    font-family: 'Days One', sans-serif;
     z-index: 1;
 
 }
@@ -36,9 +40,9 @@ body.body {
     width:100%;
     padding-top: 0px;
     padding-left: 0px;
-    background-color: rgba(5, 107, 57, 0.9);
+    background-color:$defaultdegradee;
     text-align:left; 
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $defaultFont;
     color: gray;
     text-decoration: none;
     text-underline-offset: none;
@@ -53,7 +57,7 @@ body.body {
     top: 120px;
     height: 200px;
     width: 100%;
-    background-color: rgba(5, 107, 57, 0.2);
+    background-color: $defaultdegradee;
     text-align: center;
 }
 
@@ -87,21 +91,21 @@ body.body {
     text-align: center;
     width: 100%;   
     margin-right: 15px;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $defaultFont;
 }
 .nav1 li{
     display: inline-block;
     text-decoration: none;
     margin-bottom: 5px;
     padding-bottom: 5px;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $defaultFont;
     text-align: center;
     width: auto;
     margin-right: 4px;
     margin-left: 4px;
     
 }
-h1 {
+/* h1 {
     margin-top: 90px;
     margin-left: 3%;
     text-align: center;
@@ -127,7 +131,7 @@ h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration-line: underline;
-}
+} */
 
 p {
     color: gray;
@@ -151,11 +155,10 @@ h5 {
     margin-right: 5px;
 }
 .main-footer {
-    background-color: rgba(5, 107, 57,0.9);
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
+    background-color: $defaultdegradee;
+    font-family: $defaultFont;
     color: gray;
-    position: fixed;
+    position:static; 
     left:0px;
     bottom:0px;
     height:70px;
@@ -168,14 +171,15 @@ h5 {
     text-decoration: none;
     margin-top: 10px;
     padding-top: 10px;
-    font-family: 'Noto Sans TC', sans-serif;
     text-align: center;
+    font-family: $defaultFont;
+
 }
 ul li a {
     text-decoration: none;
     display: inline-block;
     color: white;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $defaultFont;
     text-align: center;
 }
 .transition a {
@@ -198,28 +202,9 @@ ul li a {
     min-height: auto;
     max-height: auto;
     text-align: center;
-    /* border: solid 1px green; */
     margin-top: 40px;
 }
 
-
-.grilla {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(4, 100px);
-    margin-left: 30px;
-    margin-right: 20px;
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
-    grid-template-rows: auto;
-    text-align: justify;
-    height: 100px;
-}
-.grilla > * {
-    border: 3px solid green;
-    border-radius: 35px;
-}
 .box {
     text-align: center;
     font-size:1rem;
@@ -235,7 +220,6 @@ ul li a {
 .div {
     display: flex;
     margin-left: 3%;
-    /* margin-bottom: auto; */
     flex-direction: row;
 }
 .col-md-4 {
@@ -262,11 +246,12 @@ ul li a {
 }
 /* seccion BEM */
 .contact__main {
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    /* background: linear-gradient(to right, white,rgba(5, 107, 57, 0.5)); */
+
 }
     .contact__container {
-        background: linear-gradient(to right, white,rgba(5, 107, 57, 0.5));
         display: flex;
         flex-direction: row;
         margin-top: 80px;
@@ -276,6 +261,21 @@ ul li a {
         justify-content: center;
         justify-content: space-evenly;
     }
+    #contactbtn {
+        margin-top: 1.5rem;
+        margin-bottom: -0.1rem;
+        background-color:$defaultColor;
+        border-color: rgb(5, 107, 57) ;
+        
+    } 
+    #contactbtn1 {
+        /* margin-top: 1.5rem;
+        margin-bottom: -0.1rem; */
+        background-color: $defaultColor;
+        border-color: rgb(5, 107, 57) ;
+        
+    }     
+    
     .contact__titulo {
         color: gray;
         margin-top: 20px;
@@ -290,16 +290,15 @@ ul li a {
     }
     
 
-.quote {
+/* .quote {
     margin-top: 150px;
     margin-bottom: 20px;
-}
+} */
     .quote__container {
-        background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5));
-        margin-top: 170px;
-        height: auto;
-        margin-left: 200px;
-        margin-right: 200px;
+        /* background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5)); */
+        /* height: auto; */
+        margin-left: 1rem;
+        margin-right: 1rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -307,18 +306,21 @@ ul li a {
     .quote__title {
         text-align: center;
         color: grey;
-        margin-top: 30px;
+        margin-top: 10rem;
+        font-size:xx-large;
 
     }
     .quote__parrafo{
         text-align: center;
         color: grey;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: large;
+
     }
 .about__ppal {
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 10rem;
+    margin-bottom: 0;
 }
     .about__article {
         color: gray;
