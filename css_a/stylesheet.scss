@@ -232,7 +232,7 @@ ul li a {
         justify-content: space-evenly;
     }
     #contactbtn {
-        margin-top: 1.5rem;
+        margin-top: 0;
         margin-bottom: -0.1rem;
         background-color:$defaultColor;
         border-color:$defaultColor;
@@ -240,6 +240,7 @@ ul li a {
         
     } 
     #contactbtn1 {
+        margin-top: 1rem;
         background-color: $defaultColor;
         border-color: $defaultColor;
         text-align: center;
