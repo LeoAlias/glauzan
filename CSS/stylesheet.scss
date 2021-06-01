@@ -1,7 +1,8 @@
 $defaultColor :rgb(5, 107, 57);
-$defaultdegradee :rgba(5, 107, 57, 0.9);
+$defaulttraslucid :rgba(5, 107, 57, 0.9);
 $defaultFont : 'Noto Sans TC', sans-serif;
 $defaultFontColor : whitesmoke;
+$defaulttitlesize : 33px;
 
 
 *{
@@ -18,29 +19,24 @@ html {
     font-family: 'Noto Sans TC', sans-serif;
 }
 .wsp {
-    position: fixed;
-    left:1180px;
-    top: 45px;
-    height: 50px;
-    font-size:xx-large; 
-    display: flex;
-    text-align: end;
-    color: white;
+    font-family: $defaultFont;
+    color: $defaultFontColor;
     z-index: 1;
 
 }
-body.body {
-    padding-bottom: 100px;
-}
+// body.body {
+//     padding-bottom: 100px;
+// }
 .main-header1 {
     position:fixed;
     left:0px;
     top:0px;
-    height:120px;
+    height:auto;
+    max-height: 160px;
     width:100%;
     padding-top: 0px;
     padding-left: 0px;
-    background-color:$defaultdegradee;
+    background-color:$defaulttraslucid;
     text-align:left; 
     font-family: $defaultFont;
     color: gray;
@@ -54,13 +50,15 @@ body.body {
 .banner {
     position:fixed;
     left:0px;
-    top: 120px;
-    height: 200px;
+    top: 10rem;
     width: 100%;
-    background-color: $defaultdegradee;
+    background-color: $defaulttraslucid;
     text-align: center;
 }
 
+.altIcono {
+    height: 180px;
+}
 .ppal {
     margin-top: 150px;
     margin-bottom: 20px;
@@ -68,14 +66,15 @@ body.body {
 
 }
 .ppal1 {
-    padding-bottom: 100px;
-    margin-top: 350px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    margin-right: 20px;
+    // padding-bottom: 100px;
+    margin-top: 23rem;
+    margin-bottom: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    /* background-image: url(images/gray-world-map.svg); */
+    
 }
 
 .logo1 {
@@ -96,55 +95,20 @@ body.body {
 .nav1 li{
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
     font-family: $defaultFont;
     text-align: center;
     width: auto;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: white;
     
 }
-/* h1 {
-    margin-top: 90px;
-    margin-left: 3%;
-    text-align: center;
-    color:  rgba(5, 107, 57);
-}
 
-
-h2 {
+h1.card-title {
     color: gray;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 20px;
-}
-h3 {
-    color: gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-decoration-line: underline;
-    
-}
-h4 {
-    color: whitesmoke;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration-line: underline;
-} */
-
-p {
-    color: gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    
-}
-h5 {
-    color: gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration-line: underline;
+    font-size: 23px;
+    margin-top: 1rem;
     
 }
 .button {
@@ -155,7 +119,7 @@ h5 {
     margin-right: 5px;
 }
 .main-footer {
-    background-color: $defaultdegradee;
+    background-color: $defaulttraslucid;
     font-family: $defaultFont;
     color: gray;
     position:static; 
@@ -163,6 +127,8 @@ h5 {
     bottom:0px;
     height:70px;
     width:100%;
+    text-align: center;
+
     
   
 }
@@ -244,20 +210,20 @@ ul li a {
     padding-bottom: 5px;
     padding-top: -10px;
 }
+.card-title2 {
+    font-size: $defaulttitlesize;
+}
+
 /* seccion BEM */
 .contact__main {
-    margin-top: 200px;
-    margin-bottom: 0;
-    /* background: linear-gradient(to right, white,rgba(5, 107, 57, 0.5)); */
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+    
 
 }
     .contact__container {
         display: flex;
         flex-direction: row;
-        margin-top: 80px;
-        margin-bottom: -30px;
-        margin-left: 200px;
-        margin-right: 200px;
         justify-content: center;
         justify-content: space-evenly;
     }
@@ -265,14 +231,14 @@ ul li a {
         margin-top: 1.5rem;
         margin-bottom: -0.1rem;
         background-color:$defaultColor;
-        border-color: rgb(5, 107, 57) ;
+        border-color:$defaultColor;
+        text-align: center;
         
     } 
     #contactbtn1 {
-        /* margin-top: 1.5rem;
-        margin-bottom: -0.1rem; */
         background-color: $defaultColor;
-        border-color: rgb(5, 107, 57) ;
+        border-color: $defaultColor;
+        text-align: center;
         
     }     
     
@@ -289,19 +255,25 @@ ul li a {
         text-decoration: none;
     }
     
+.body {
+    background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5)); 
 
-/* .quote {
-    margin-top: 150px;
-    margin-bottom: 20px;
-} */
-    .quote__container {
-        /* background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5)); */
-        /* height: auto; */
-        margin-left: 1rem;
-        margin-right: 1rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+}
+.quote {
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+    .divquote {
+        margin: 0 0 0 0;
+        padding:0 0 0 0;
     }
     .quote__title {
         text-align: center;
@@ -318,32 +290,15 @@ ul li a {
         font-size: large;
 
     }
-.about__ppal {
+.about-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 10rem;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
 }
-    .about__article {
-        color: gray;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        text-decoration: none;
-    }
-
-.blog__main {
-    margin-top: 10%;
+.about-section2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
-    .blog__container{
-        background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5));
-        height: auto;
-        align-items: center;
-        text-align: center;
-    }
-    .blog__title {
-        text-align: center;
-        color: grey;
-        margin-top: 2%;
-    }
-    .blog__font {
-        font-size: 110%;
-        color: gray;
-    }
