@@ -16,11 +16,13 @@ html {
 .main-header1 {
   position: fixed;
   left: 0px;
+  right: 0px;
   top: 0px;
   height: auto;
   width: 100%;
   padding-top: 0px;
   padding-left: 0px;
+  padding-right: 0px;
   background-color: rgba(5, 107, 57, 0.9);
   text-align: left;
   font-family: "Noto Sans TC", sans-serif;
@@ -31,10 +33,12 @@ html {
   z-index: 1; }
 
 .banner {
-  position: fixed;
-  left: 0px;
+  position:relative;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   top: 10rem;
-  width: 100%;
+  width: 90%;
   background-color: rgba(5, 107, 57, 0.9);
   text-align: center; }
 
@@ -42,11 +46,11 @@ html {
   height: 180px; }
 
 .ppal_services {
-  margin-top: 10rem;
+  margin-top: 12rem;
   margin-bottom: 3rem; }
 
 .ppal1 {
-  margin-top: 23rem;
+  margin-top: 12rem;
   margin-bottom: 2rem;
   margin-left: 8rem;
   margin-right: 8rem;
@@ -184,16 +188,23 @@ ul li a {
 /* seccion BEM */
 .contact__main {
   margin-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 7rem; }
 
 .contact__container {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-evenly; }
+  /* justify-content: space-evenly;  */
+}
 
 #contactbtn {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: -0.1rem;
   background-color: #056b39;
   border-color: #056b39;
@@ -233,7 +244,7 @@ ul li a {
   text-align: center; }
 
 .divquote {
-  margin: 0 0 0 0;
+  margin-top: 12rem;
   padding: 0 0 0 0; }
 
 .quote__title {
@@ -252,7 +263,7 @@ ul li a {
 .about-section {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
   margin-bottom: 3rem; }
 
 .about-section2 {
