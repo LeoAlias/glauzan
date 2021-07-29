@@ -42,8 +42,9 @@ html {
     text-underline-offset: none;
     display: block;
     z-index: 1;
- 
-    
+}
+.menu_bar {
+    display: none;
 }
 .banner {
     position:fixed;
@@ -164,7 +165,6 @@ ul li a {
     font-weight: bold;
     
 }
-
 
 .card-container {
     display: inline-block;
