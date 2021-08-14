@@ -30,7 +30,6 @@ html {
     left:0px;
     top:0px;
     height:auto;
-    // max-height: 160px;
     width:100%;
     padding-top: 0px;
     padding-left: 0px;
@@ -54,7 +53,22 @@ html {
     background-color: $defaulttraslucid;
     text-align: center;
 }
-
+@media screen and (max-width : 800px) {
+    .banner {
+        display : none;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        line-height: 0; /* sólo en caso de elementos inline-block */
+        overflow: hidden;
+     }
+    .seamargin {
+        margin-top: 1rem;
+    } 
+    
+}
 .altIcono {
     height: 180px;
 }
