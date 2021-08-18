@@ -7,7 +7,7 @@ html {
   background-size: auto;
   background-position-x: center;
   background-repeat: no-repeat;
-  font-family: 'Noto Sans TC', sans-serif; }
+  font-family: "Noto Sans TC", sans-serif; }
 
 .wsp {
   font-family: "Noto Sans TC", sans-serif;
@@ -146,7 +146,7 @@ ul li a {
   color: whitesmoke;
   font-size: 18px;
   font-weight: 500;
-  transition-duration: .3s; }
+  transition-duration: 0.3s; }
 
 .transition a:hover {
   color: whitesmoke;
@@ -193,7 +193,7 @@ ul li a {
 
 .card-text {
   height: auto;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   padding-top: -10px; }
 
 .card-title2 {
@@ -211,7 +211,7 @@ ul li a {
   justify-content: space-evenly; }
 
 #contactbtn {
-  margin-top: 0;
+  margin-top: 6px;
   margin-bottom: -0.1rem;
   background-color: #056b39;
   border-color: #056b39;

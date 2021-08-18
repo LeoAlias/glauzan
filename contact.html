@@ -38,6 +38,7 @@
                           <h1 class="card-title2">Contacto</h1>
                           <p class="card-text"> - Direccion: Calle Esnaola 615 4to. "B" C.P. 1405 C.A.B.A.</p>
                           <p class="card-text"> - Telefono: +54 11 4982 3082</p>
+                          <p class="card-text"> - Móvil: +54 911 6491 4092</p>
                           <p class="card-text"> - Email: comercial@glcomerciointernacional.com.ar</p>
                           <p class="card-text"> - Horarios: Lunes a Viernes de 9 a 18 hs.</p>
                           <a href="index.html" class="btn btn-primary" id="contactbtn1">Inicio</a>
@@ -49,14 +50,14 @@
                         <div class="card-body">
                           <h2 class="card-title2">Formulario de contacto</h2>
                           <div></div>
-                          <form>
+                          <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+                              <label for="name" id="name" class="form-label">Nombre y apellido</label>
                               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                               <div id="emailHelp" class="form-text">No compartiremos tu nombre con nadie.</div>
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Email</label>
+                              <label for="email" id="email" class="form-label">Email</label>
                               <input type="email" class="form-control" id="exampleInputPassword1">
                               <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
                             </div>
