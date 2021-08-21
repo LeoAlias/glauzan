@@ -32,33 +32,35 @@
         <div class="divquote"> 
             <h1 class="quote__title">Solicitud de cotización</h1>
             <h2 class="quote__parrafo">Pedinos tu cotizacion para cualquier envío que necesites hacer, ya sea importación o exportación.</h2> 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-            </div>
-            <div>
-                <label> País de origen: </label>
-                <select name="pais">
-                <option value="AR">Argentina</option>
-                <option value="BR">Brasil</option>
-                <option value="CL">Chile</option>
-                </select>
-            </div>
-            <div>
-                <label> ¿Ya sos cliente? </label>
-                <input type="radio" name="si" value="si"> Si
-                <input type="radio" name="si" value="no"> No
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Explicanos los detalles de tu pedido de cotizacion..."></textarea>
-                <button id="contactbtn" type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </div>      
+            <form action="quote.php" method="post">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div>
+                        <label> País de origen: </label>
+                        <select name="pais">
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CL">Chile</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label> ¿Ya sos cliente? </label>
+                        <input type="radio" name="si" value="si"> Si
+                        <input type="radio" name="si" value="no"> No
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" name="message" id="message"  rows="6" placeholder="Explicanos los detalles de tu pedido de cotizacion..."></textarea>
+                        <button id="contactbtn" type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>  
+           </form>         
     </section> 
   </main>
   
