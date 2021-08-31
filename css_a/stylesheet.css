@@ -1,21 +1,18 @@
 @charset "UTF-8";
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 html {
   background-size: auto;
   background-position-x: center;
   background-repeat: no-repeat;
-  font-family: "Noto Sans TC", sans-serif;
-}
+  font-family: "Noto Sans TC", sans-serif; }
 
 .wsp {
   font-family: "Noto Sans TC", sans-serif;
   color: whitesmoke;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .main-header1 {
   position: fixed;
@@ -32,12 +29,10 @@ html {
   text-decoration: none;
   text-underline-offset: none;
   display: block;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .menu_bar {
-  display: none;
-}
+  display: none; }
 
 .banner {
   position: fixed;
@@ -45,8 +40,7 @@ html {
   top: 10rem;
   width: 100%;
   background-color: rgba(5, 107, 57, 0.9);
-  text-align: center;
-}
+  text-align: center; }
 
 @media screen and (max-width: 800px) {
   .banner {
@@ -58,21 +52,16 @@ html {
     border: 0;
     line-height: 0;
     /* sólo en caso de elementos inline-block */
-    overflow: hidden;
-  }
+    overflow: hidden; }
   .seamargin {
-    margin-top: 1rem;
-  }
-}
+    margin-top: 1rem; } }
 
 .altIcono {
-  height: 180px;
-}
+  height: 180px; }
 
 .ppal_services {
   margin-top: 10rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .ppal1 {
   margin-top: 23rem;
@@ -81,15 +70,13 @@ html {
   margin-right: 8rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .logo1 {
   position: fixed;
   left: 20px;
   top: 35px;
-  height: 50px;
-}
+  height: 50px; }
 
 .main-nav1 {
   display: inline-block;
@@ -97,8 +84,7 @@ html {
   text-align: center;
   width: 100%;
   margin-right: 15px;
-  font-family: "Noto Sans TC", sans-serif;
-}
+  font-family: "Noto Sans TC", sans-serif; }
 
 .nav1 li {
   display: inline-block;
@@ -108,30 +94,26 @@ html {
   width: auto;
   margin-right: 1rem;
   margin-left: 1rem;
-  color: white;
-}
+  color: white; }
 
 h1.card-title {
   color: gray;
   text-decoration-line: underline;
   font-size: 23px;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 h1.title_services {
   color: gray;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-}
+  text-align: center; }
 
 .button {
   display: inline-block;
   margin-top: -45px;
   padding-top: -10px;
   margin-left: 5px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 .main-footer {
   background-color: rgba(5, 107, 57, 0.9);
@@ -143,8 +125,7 @@ h1.title_services {
   height: auto;
   min-height: 70px;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 .footer li {
   display: inline-block;
@@ -152,29 +133,25 @@ h1.title_services {
   margin-top: 10px;
   padding-top: 10px;
   text-align: center;
-  font-family: "Noto Sans TC", sans-serif;
-}
+  font-family: "Noto Sans TC", sans-serif; }
 
 ul li a {
   text-decoration: none;
   display: inline-block;
   color: white;
   font-family: "Noto Sans TC", sans-serif;
-  text-align: center;
-}
+  text-align: center; }
 
 .transition a {
   color: whitesmoke;
   font-size: 18px;
   font-weight: 500;
-  transition-duration: 0.3s;
-}
+  transition-duration: 0.3s; }
 
 .transition a:hover {
   color: whitesmoke;
   transform: scale(1.1);
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .card-container {
   display: inline-block;
@@ -182,100 +159,84 @@ ul li a {
   min-height: auto;
   max-height: auto;
   text-align: center;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 .box {
   text-align: center;
   font-size: 1rem;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .box-bootstrap {
   width: 100%;
   display: flex !important;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .div {
   display: flex;
   margin-left: 3%;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .col-md-4 {
   display: flex;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 .col-md-8 {
   display: flex;
-  padding-left: 20%;
-}
+  padding-left: 20%; }
 
 .card mb-3 {
   padding-top: 3%;
   padding-bottom: 3%;
   margin-top: 3%;
-  margin-bottom: 3%;
-}
+  margin-bottom: 3%; }
 
 .card-text {
   height: auto;
   padding-bottom: 1px;
-  padding-top: -10px;
-}
+  padding-top: -10px; }
 
 .card-title2 {
-  font-size: 33px;
-}
+  font-size: 33px; }
 
 /* seccion BEM */
 .contact__main {
   margin-top: 12rem;
-  margin-bottom: 7rem;
-}
+  margin-bottom: 7rem; }
 
 .contact__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
 
 #contactbtn {
-  margin-top: 6px;
-  margin-bottom: -0.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: -1.2rem;
   background-color: #056b39;
   border-color: #056b39;
-  text-align: center;
-}
+  text-align: center; }
 
 #contactbtn1 {
-  margin-top: 1rem;
+  margin-top: 9.2rem;
   background-color: #056b39;
   border-color: #056b39;
-  text-align: center;
-}
+  text-align: center; }
 
 .contact__titulo {
   color: gray;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-decoration-line: underline;
-}
+  text-decoration-line: underline; }
 
 .contact__parrafo {
   color: gray;
   margin-top: 30px;
   margin-bottom: 20px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .body {
-  background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5));
-}
+  background: linear-gradient(to right, white, rgba(5, 107, 57, 0.5)); }
 
 .quote {
   height: auto;
@@ -287,67 +248,57 @@ ul li a {
   padding-top: 0;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .divquote {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
+  padding: 0 0 0 0; }
 
 .quote__title {
   text-align: center;
   color: grey;
   margin-top: 10rem;
-  font-size: xx-large;
-}
+  font-size: xx-large; }
 
 .quote__parrafo {
   text-align: center;
   color: grey;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-size: large;
-}
+  font-size: large; }
 
 .about-section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 10rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .about-section2 {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .sea-section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .air-section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .land-section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .custom-section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }

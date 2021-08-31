@@ -50,17 +50,20 @@
                         <div class="card-body">
                           <h2 class="card-title2">Formulario de contacto</h2>
                           <div></div>
-                          <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+                          <form action="send.php" method="post" role="form" class="php-email-form mt-4">
                             <div class="mb-3">
-                              <label for="name" name="name" id="name" class="form-label">Nombre y apellido</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <label for="Nombre" class="form-label">Nombre y apellido</label>
+                              <input type="text" name="name" id="name" class="form-control" aria-describedby="emailHelp">
                               <div id="emailHelp" class="form-text">No compartiremos tu nombre con nadie.</div>
                             </div>
                             <div class="mb-3">
-                              <label for="email" name="email" id="email" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="exampleInputPassword1">
+                              <label for="CorreoElectronico"  class="form-label">Email</label>
+                              <input type="email" name="email" id="email" class="form-control" >
                               <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
                             </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                              <textarea class="form-control" name="message" id="message"  rows="2" placeholder="Dejanos tus comentarios"></textarea>
                             <button id="contactbtn" type="submit" class="btn btn-primary">Enviar</button>
                           </form>
                         </div>
