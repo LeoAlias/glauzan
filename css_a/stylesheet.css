@@ -223,6 +223,13 @@ ul li a {
   border-color: #056b39;
   text-align: center; }
 
+#contactbtn2 {
+  margin-top: 1.5rem;
+  margin-bottom: -0.5rem;
+  background-color: #056b39;
+  border-color: #056b39;
+  text-align: center; }
+
 .contact__titulo {
   color: gray;
   margin-top: 20px;
